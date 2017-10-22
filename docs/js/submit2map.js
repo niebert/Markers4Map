@@ -29,7 +29,7 @@ function populateDataJSON() {
       vOut += vCR + vRecOut;
       vCR = ",\n";
       if (vMapCenterMissing) {
-        el4id("mymapcenter").value = vData[i].vData[i].lng+","+vData[i].lat;
+        el4id("mymapcenter").value = vData[i].lng+","+vData[i].lat;
         vMapCenterMissing = false;
       }
     };
