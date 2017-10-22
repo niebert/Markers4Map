@@ -52,7 +52,7 @@ function getMarkerString(pNr,pRec) {
     if (pRec.hasOwnProperty("summary")) {
       if (pRec.summary != "") {
         vOut += pRec.summary.replace(/"/g,'\"');
-        vOut +="<br/>";
+        vOut +="\"";
       }
     }
   } else {
