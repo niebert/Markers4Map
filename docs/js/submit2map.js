@@ -54,7 +54,7 @@ function getMarkerString(pNr,pRec) {
     vOut +="</b>";
     if (pRec.hasOwnProperty("summary")) {
       if (pRec.summary != "") {
-        vOut +="<br/>";
+        vOut +="<hr>";
         vOut += pRec.summary.replace(/"/g,'\"');
         vOut +="\"";
       }
