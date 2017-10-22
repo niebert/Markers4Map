@@ -43,7 +43,7 @@ function populateDataJSON() {
 function getMarkerString(pNr,pRec) {
   var vOut = "";
   if ((pRec.lat != "") && (pRec.lng != "")) {
-    vOut += "{ \"geolocation\" : ["+pRec.lat+","+pRec.lng+"],";
+    vOut += "{ \"geolocation\" : ["+pRec.lng+","+pRec.lat+"],";
     vOut += "\"name\" : \"";
     vOut +="<b>";
     if (pRec.webpage != "") {
