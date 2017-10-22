@@ -215,7 +215,7 @@ Editor4JSON.prototype.init = function (pDOMID,pData,pSchema) {
 		 if (this.current < this.aData.length) {
 			 this.aEditorConfig.startval = this.aData[this.current];
 		 } else {
-			 this.aEditorConfig.startval = this.aData[0];			 
+			 this.aEditorConfig.startval = this.aData[0];
 		 }
   };
   // create the editor
@@ -902,7 +902,7 @@ Editor4JSON.prototype.deleteRecord = function () {
 	// if this.current is still in the range of indices of the array this.aData
 	// this could happen if last element in array was deleted
 	this.edit();
-
+	this.saveLS();
 };
 //----End of Method deleteRecord Definition
 
@@ -1184,7 +1184,8 @@ Editor4JSON.prototype.add = function () {
   //this.aData.push({"id":new Date().toLocaleString()});
   this.aData.push({"id":Date.now()});
   this.current = this.aData.length - 1; // this is the index of the last new element
-  this.edit();
+	this.saveLS();
+	this.edit();
   this.updateDOM(); // updateDOM()-call necessary because length and current index changed due to add-click of user
 
 };
