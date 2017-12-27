@@ -44,7 +44,7 @@ vDataJSON["mapobject"] = {
             "title": "Latitude",
             "default": "",
             "format": "text",
-            "description": "An explanation for 'root.lat' about the purpose of string instance with editor path 'root.lat'."
+            "description": "Latitude of Geolocation"
         },
         "lng": {
             "type": "string",
@@ -52,14 +52,14 @@ vDataJSON["mapobject"] = {
             "title": "Longitude",
             "default": "",
             "format": "text",
-            "description": "An explanation for 'root.lng' about the purpose of string instance with editor path 'root.lng'."
+            "description": "Longitude of Geolocation"
         },
         "has_detail_page": {
             "type": "string",
             "id": "/properties/has_detail_page",
             "title": "Details Page exists:",
   		    "enum": [
-        		"0",
+        			"0",
           		"1"
           	],
           	 "options": {
