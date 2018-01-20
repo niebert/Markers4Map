@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Receiver of Params</title>
+    <script src="js/linkparam.js"></script>
+  </head>
+  <body>
+
+  	<div id="paramout">
+  	 JSON Data
+  	</div>
+    <!--
+  	<input type="text" id="textout" value="undefined content">
+    -->
+    <textarea id="textout" row="5" cols="95">undefined content</textarea>
+    <script>
+  		var vLinkParam = new LinkParam();
+  		vLinkParam.init(document);
+  		if (vLinkParam.exists("jsondata")) {
+  			var vPar = vLinkParam.getValue("jsondata");
+        var vJSON = JSON.parse(vPar);
+  			//alert(vPar);
+  			document.getElementById("textout").value = JSON.stringify(vJSON,null,4); //vPar;
+  		} else {
+  			alert("Receiver needs a LinkParameter 'jsondata'")
+  		}
+  	</script>
+  </body>
+</html>

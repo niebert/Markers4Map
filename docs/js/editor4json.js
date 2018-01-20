@@ -228,9 +228,11 @@ Editor4JSON.prototype.init = function (pDOMID,pData,pSchema) {
 
   // Hook up the validation indicator to update its
   // status whenever the editor changes
+	var vThis = this; // necessary otherwise "this" refers to another object than the Editor4JSON
   this.aEditor.on('change',function() {
           // upadte the currect record in large array
-          vEditor4JSON.onChange()
+					//vEditor4JSON.onChange()
+					vThis.onChange();
         });
 	this.check();
 	this.updateDOM();

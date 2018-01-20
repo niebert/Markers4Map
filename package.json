@@ -1,0 +1,44 @@
+{
+  "name": "markers4map",
+  "version": "0.1.5",
+  "description": "Place interactively markers/icons on an OpenLayers Map and add URL descriptions and titles to each icon. The information for each marker will be shown in popup, when the user clicks on the OpenLayers icon on the map. ",
+  "main": "src/main.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "doctoc": "^1.3.0",
+    "lint": "^1.1.2",
+    "uglify-js": "^2.6.2",
+    "watchify": "^3.9.0"
+  },
+  "scripts": {
+    "watch": "watchify src/main.js -o docs/js/markers4map.js -v",
+    "build2dist": "browserify src/main.js  -o dist/markers4map.js && browserify src/main.js | uglifyjs -mc warnings=false > dist/markers4map.min.js",
+    "test": "node-lint dist/markers4map.js",
+    "compress": "uglifyjs dist/markers4map.js --compress -o dist/markers4map.min.js",
+    "build": "browserify src/main.js  -o docs/js/markers4map.js -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niebert/Markers4Map.git"
+  },
+  "keywords": [
+    "OpenLayers",
+    "Map",
+    "Icons",
+    "Generator",
+    "WebApp"
+  ],
+  "author": "Engelbert Niehaus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niebert/Markers4Map/issues"
+  },
+  "homepage": "https://github.com/niebert/Markers4Map#readme",
+  "dependencies": {
+    "linkparam": "^1.0.3",
+    "file-saver": "^1.3.3"
+  }
+}
