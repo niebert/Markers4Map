@@ -57,7 +57,7 @@ vDataJSON["mapobject"] = {
         "has_detail_page": {
             "type": "string",
             "id": "/properties/has_detail_page",
-            "title": "Details Page exists:",
+            "title": "URL in Popup clickable:",
   		    "enum": [
         			"0",
           		"1"
@@ -70,7 +70,7 @@ vDataJSON["mapobject"] = {
        		},
             "default": "1",
             "format": "text",
-            "description": "If set to yes the URL mentioned below will be clickable in mixare. Set to no (0) the URL is not available after clicking on the Mixare icon."
+            "description": "If set to yes the URL mentioned below will be clickable in popup for the icon. Set to no (0) the URL is not available after clicking on the Mixare icon."
         },
         "webpage": {
             "type": "string",
@@ -78,7 +78,7 @@ vDataJSON["mapobject"] = {
             "title": "URL:",
             "default": "",
             "format": "text",
-            "description": "URL to webpage with additional information to geolocation/icon."
+            "description": "URL to webpage with additional information to geolocation/icon. Set"
         }
  	},
   	"definitions": {
