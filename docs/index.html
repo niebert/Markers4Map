@@ -125,8 +125,9 @@
               <button type="submit"  style="color: #000000;background-color: #DFDFDF">
                   <i class="fa fa-globe" aria-hidden="true"></i> Select Geolocation
               </button>
+
             </form>
-          </td>
+        </td>
       <td>
           <!--
           <form id="mapselector" onsubmit="populateDataJSON()" action="receiver.html" method="GET">
@@ -144,6 +145,20 @@
           </form>
         </td>
     </tr>
+    <tr>
+      <td colspan=2>
+        &nbsp;
+        <button type="button"  style="color: white;background-color: #225988" onclick="createMapLink();return false">
+            <i class="fa fa-globe" aria-hidden="true"></i> Create Map Link
+        </button>
+      <!--
+      </td>
+      <td>
+      -->
+        <input type="text" id="maplink" value="" size="80">
+      </td>
+
+  </tr>
     <tr>
         <td>
           <div class="text" id="load_filename"></div>

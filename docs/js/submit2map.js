@@ -15,9 +15,23 @@ function copyMapCenterZoom() {
 
 }
 
+function createMapLink(pchecked) {
+  var vURL = "https://niebert.github.io/openlayer_display_markers/viewicons.html?";
+  vURL += "mapcenter=" + encodeURIComponent(el4id("mymapcenter").value);
+  vURL += "&zoom=" + encodeURIComponent(el4id("myzoom").value);
+  vURL += "&jsondata="+ encodeURIComponent(getDataJSON4Link());
+  el4id("maplink").value = vURL;
+}
+
 function populateDataJSON() {
   vEditor4JSON.saveLS(); // save JSON Data to Local Storage
   copyMapCenterZoom();
+  var vOut = getDataJSON4Link();
+  //document.getElementById('jsondata').value = JSON.stringify(vJSON,null,4);
+  document.getElementById('jsondata').value = encodeURIComponent(vOut);
+};
+
+function getDataJSON4Link() {
   var vData = vEditor4JSON.aData;
   var vOut = "";
   var vCR = "";
@@ -34,11 +48,9 @@ function populateDataJSON() {
       }
     };
   };
-  vOut = "%5B" + vOut + "%5D";
-  //var vJSON = vData;
-  //document.getElementById('jsondata').value = JSON.stringify(vJSON,null,4);
-  document.getElementById('jsondata').value = vOut;
-};
+  vOut = "[" + vOut + "]";
+  return vOut
+}
 
 function getMarkerString(pNr,pRec) {
   var vOut = "";
