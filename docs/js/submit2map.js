@@ -10,7 +10,7 @@ function el4id(pID) {
 function copyMapCenterZoom() {
   console.log("copyMapCenterZoom");
   el4id("viewmapcenter").value = el4id("mymapcenter").value;
-  el4id("viewzoom").value = el4id("myzoom").value;
+  el4id("viewzoom").value = el4id("myzoom").value || "10";
   console.log("copyMapCenterZoom after");
 
 }
@@ -34,7 +34,7 @@ function populateDataJSON() {
       }
     };
   };
-  vOut = "[" + vOut + "]";
+  vOut = "%5B" + vOut + "%5D";
   //var vJSON = vData;
   //document.getElementById('jsondata').value = JSON.stringify(vJSON,null,4);
   document.getElementById('jsondata').value = vOut;
