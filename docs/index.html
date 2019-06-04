@@ -235,6 +235,7 @@
         var vGeoArr = vGeoLoc.split(",");
         vRecJSON["lat"] = vGeoArr[1];
         vRecJSON["lng"] = vGeoArr[0];
+        vRecJSON["jsondata"] = decodeURIComponent(vRecJSON["jsondata"]);
         vEditor4JSON.aData[vEditor4JSON.current] = vRecJSON;
         vEditor4JSON.aEditor.setValue(vRecJSON);
         // update the selected current record in JSON with the selected geolocation
