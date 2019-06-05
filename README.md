@@ -1,7 +1,7 @@
 # Markers4Map
 [Markers4Map](https://niebert.gihub.io/Markers4Map) is an OpenSource tool developed for creating markers/icons with a info popup for the tagged geolocation on a map. The map is generated with [OpenLayers](https://www.openlayers.org) and the mapping source [OpenStreetMap](https://www.openstreetmap.org).
 
-* <font size="+2"><a href="https://niebert.gihub.io/Markers4Map" target="githubio">Markers4Map Demo</a></font>
+* **[Markers4Map Demo](https://niebert.gihub.io/Markers4Map)**
 
 The data for the markers, popups for the geolocation are stored in a JSON file and shared with others. Stored JSON data can be loaded from the WebApp [Markers4Map](https://niebert.gihub.io/Markers4Map).
 
@@ -18,7 +18,36 @@ Display of the markers is performend with the following package:
 
 ## Online Demo
 
-https://niebert.github.io/Markers4Map
+* https://niebert.github.io/Markers4Map
+
+## JSON Data
+The JSON data has the following structure.
+```javascript
+vDataJSON["initdata"] = [
+    {
+        "id": "2821",
+        "lat": "51.493889053694915",
+        "lng": "-0.14467470703124907",
+        "title": "London",
+        "summary": "London created a Open Innovation Ecosystem for SDG Clean Water and Sanitation",
+        "has_detail_page": "1",
+        "webpage": "https://en.wikipedia.org/wiki/London",
+    },
+    {
+        "id": "1508460902844",
+        "lat": "51.243141",
+        "lng": "-1.81185",
+        "title": "Brimingham",
+        "summary": "Birmingham created SDG-activities about SDG7 Clean and affordable Energy and SDG3 Health",
+        "has_detail_page": "1",
+        "webpage": "https://en.wikipedia.org/wiki/Birmingham",
+    }
+]
+```
+The init data is defined in `docs/db/data.js` in a Javascript file, so that the data can be loaded with a default `script`-tag.
+
+## Load and Save data
+You can load and save data in the WebApp with the `Load` and `Save`. Saving the current work on the local harddrive as JSON file is always recommended because the processing of data is not stored on a server. Data is kept in the browser and is saved in the LocalStorage of the browser (see https://en.wikiversity.org/wiki/AppLSAC)
 
 ## Browserify and Watchify
 Browserify and Watchify are used in this repository to control the WebApp-javascript development with the required Javascript libraries installed with [NPM Node.js](https://docs.npmjs.com/getting-started/installing-node) and similar framework world that greatly improve your javascript workflow: Using them, you no longer need to micro-manage your script tags but instead you just declare the libraries each of your client-side modules is using - or you can even create your own reusable modules! Also, installing (or updating) javascript libraries is as easy as running a single command!
