@@ -1,5 +1,18 @@
 # Markers4Map
-OpenLayers create a JSON Database of Markers for the Map
+[Markers4Map](https://niebert.gihub.io/Markers4Map) is an OpenSource tool developed for creating markers/icons with a info popup for the tagged geolocation on a map. The map is generated with [OpenLayers](https://www.openlayers.org) and the mapping source [OpenStreetMap](https://www.openstreetmap.org).
+:: <font size="+2"><a href="https://niebert.gihub.io/Markers4Map" target="githubio">Markers4Map Demo</a></font>
+
+The data for the markers, popups for the geolocation are stored in a JSON file and shared with others. Stored JSON data can be loaded from the WebApp [Markers4Map](https://niebert.gihub.io/Markers4Map).
+
+The information about the markers/icons/popups is stored in link/url that can be used e.g. Wikiversity for a specific learning resource.
+
+The documentation for [Markers4Map](https://niebert.gihub.io/Markers4Map) is available in [Wikiversity-Markers4Map](https:/en.wikiversity.org/wiki/Markers4Map).
+
+The WebApp [Markers4Map](https://niebert.gihub.io/Markers4Map) is a [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC) with privacy friendly data management in the browser in mind.
+
+Display of the markers is performend with the following package:
+* [openlayer_display_markers](https://www.github.com/niebert/openlayer_display_markers) URL: https://www.github.com/niebert/openlayer_display_markers
+* Similar repository to [Mapper4SDG](https://www.github.com/niebert/Mapper4SDG) for mapping activities for [Sustainable Development Goals](https://en.wikiversity.org/wiki/Sustainable_Development_Goals) on map.
 
 
 ## Online Demo
