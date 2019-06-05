@@ -1,6 +1,7 @@
 # Markers4Map
 [Markers4Map](https://niebert.gihub.io/Markers4Map) is an OpenSource tool developed for creating markers/icons with a info popup for the tagged geolocation on a map. The map is generated with [OpenLayers](https://www.openlayers.org) and the mapping source [OpenStreetMap](https://www.openstreetmap.org).
-:: <font size="+2"><a href="https://niebert.gihub.io/Markers4Map" target="githubio">Markers4Map Demo</a></font>
+
+* <font size="+2"><a href="https://niebert.gihub.io/Markers4Map" target="githubio">Markers4Map Demo</a></font>
 
 The data for the markers, popups for the geolocation are stored in a JSON file and shared with others. Stored JSON data can be loaded from the WebApp [Markers4Map](https://niebert.gihub.io/Markers4Map).
 
