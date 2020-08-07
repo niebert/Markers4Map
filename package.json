@@ -1,6 +1,6 @@
 {
   "name": "markers4map",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Place interactively markers/icons on an OpenLayers Map and add URL descriptions and titles to each icon. The information for each marker will be shown in popup, when the user clicks on the OpenLayers icon on the map. ",
   "main": "src/main.js",
   "directories": {
