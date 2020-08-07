@@ -49,6 +49,9 @@ The init data is defined in `docs/db/data.js` in a Javascript file, so that the 
 ## Load and Save data
 You can load and save data in the WebApp with the `Load` and `Save`. Saving the current work on the local harddrive as JSON file is always recommended because the processing of data is not stored on a server. Data is kept in the browser and is saved in the LocalStorage of the browser (see https://en.wikiversity.org/wiki/AppLSAC)
 
+## Create your own JSON Editor with JSON2Schema
+For [JSON2Schema](https://niebert.github.io/JSON2Schema) you can create a complete WebApp ([AppLSAC](https://en.wikiversity.org/wiki/AppLSAC)) in 5 minutes from the given JSON to a full functional WebApp that performs the task in a browser as runtime environment without any need for setting up a server backend to be able to perform tasks with the WebApp. AppLSACs can run offline in browsers.
+
 ## Browserify and Watchify
 Browserify and Watchify are used in this repository to control the WebApp-javascript development with the required Javascript libraries installed with [NPM Node.js](https://docs.npmjs.com/getting-started/installing-node) and similar framework world that greatly improve your javascript workflow: Using them, you no longer need to micro-manage your script tags but instead you just declare the libraries each of your client-side modules is using - or you can even create your own reusable modules! Also, installing (or updating) javascript libraries is as easy as running a single command!
 * [Additional Information about Browserify and Watchify on GitHub](https://spapas.github.io/2015/05/27/using-browserify-watchify/)
