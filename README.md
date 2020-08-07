@@ -3,13 +3,13 @@
 
 * **[Markers4Map Demo](https://niebert.github.io/Markers4Map)**
 
-The data for the markers, popups for the geolocation are stored in a JSON file and shared with others. Stored JSON data can be loaded from the WebApp [Markers4Map](https://niebert.gihub.io/Markers4Map).
+The data for the markers, popups for the geolocation are stored in a JSON file and shared with others. Stored JSON data can be loaded from the WebApp [Markers4Map](https://niebert.github.io/Markers4Map).
 
 The information about the markers/icons/popups is stored in link/url that can be used e.g. Wikiversity for a specific learning resource.
 
-The documentation for [Markers4Map](https://niebert.gihub.io/Markers4Map) is available in [Wikiversity-Markers4Map](https:/en.wikiversity.org/wiki/Markers4Map).
+The documentation for [Markers4Map](https://niebert.github.io/Markers4Map) is available in [Wikiversity-Markers4Map](https:/en.wikiversity.org/wiki/Markers4Map).
 
-The WebApp [Markers4Map](https://niebert.gihub.io/Markers4Map) is a [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC) with privacy friendly data management in the browser in mind.
+The WebApp [Markers4Map](https://niebert.github.io/Markers4Map) is a [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC) with privacy friendly data management in the browser in mind.
 
 Display of the markers is performend with the following package:
 * [openlayer_display_markers](https://www.github.com/niebert/openlayer_display_markers) URL: https://www.github.com/niebert/openlayer_display_markers
