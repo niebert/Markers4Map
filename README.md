@@ -67,7 +67,7 @@ This is recommended because your will not install Browserfy, Watchify and Uglify
 * ***Browserfy*** converts `node_modules` in a single library, that can be imported in WebApp. Browserify resolves dependencies and included the required libraries into the bundled javascript code.
 * ***Watchify*** watches changes in the source code and runs the build process whenever it detects changes in the your source code.
 * ***UglifyJS*** compresses the source code of ```class_editor_uml.js``` into ```class_editor_uml.min.js``` to reduce download time and WebApp performance during load.
-* ***DocToc*** is used to create a helpful table of contents in the README (see [DocToc-Installation]https://github.com/thlorenz/doctoc#installation) for further details on [NPM DocToc](https://www.npmjs.com/package/doctoc) ). Run `doctoc README.md` for updating the table of contents.
+* ***DocToc*** is used to create a helpful table of contents in the README (see [DocToc-Installation](https://github.com/thlorenz/doctoc#installation) for further details on [NPM DocToc](https://www.npmjs.com/package/doctoc) ). Run `doctoc README.md` for updating the table of contents.
 * ***jsLint*** is used to check the Javascript code, quality of code can be improved by application of jsLint
 
 ### Package Installation of Browserify and Watchify - Alternative
