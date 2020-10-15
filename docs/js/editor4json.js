@@ -562,7 +562,7 @@ Editor4JSON.prototype.export = function (pFilename,pJSON) {
 	console.log("Editor4JSON.export('"+pFilename+"')-Call");
   var vStringJSON = JSON.stringify(pJSON,null,4);
   // File is a Javascript Class defined in FileSaver.js
-  var file = new File([vStringJSON], {type: "text/plain;charset=utf-8"});
+  var file = new Blob([vStringJSON], {type: "text/plain;charset=utf-8"});
   // method saveAs() is defined in FileSaver.js so import filesaver.js and blob.js to your Javascript project
   saveAs(file,pFilename);
 
